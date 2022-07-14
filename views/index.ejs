@@ -20,12 +20,12 @@
     <br>
     <hr>
     <h3>List Contact</h3>
-    <ul>
-    <% cont.forEach((contact, i) => { %>
-        <li><%= i+1 %>. Nama: <%= contact.name %> 
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Email: <%= contact.email %></li>
+    <ol>
+    <% cont.forEach((contact) => { %>
+        <li>Nama: <%= contact.name %> 
+            <br>Email: <%= contact.email %></li>
     <% });  %>
-    </ul>
+    </ol>
     
 </body>
 </html>
